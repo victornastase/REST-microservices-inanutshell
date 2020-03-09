@@ -1,4 +1,4 @@
-package com.pokedex.microservice.pokebrowseservice.model.exceptions;
+package com.pokedex.microservice.pokecatalogservice.models.exceptions;
 
 import java.util.Date;
 

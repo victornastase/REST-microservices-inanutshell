@@ -1,7 +1,7 @@
 package com.pokedex.microservice.pokedetailservice.error.handle;
 
-import com.pokedex.microservice.pokedetailservice.model.exceptions.ExceptionResponse;
-import com.pokedex.microservice.pokedetailservice.model.exceptions.PokemonNotFoundException;
+import com.pokedex.microservice.pokedetailservice.models.exceptions.ExceptionResponse;
+import com.pokedex.microservice.pokedetailservice.error.handle.errors.PokemonNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

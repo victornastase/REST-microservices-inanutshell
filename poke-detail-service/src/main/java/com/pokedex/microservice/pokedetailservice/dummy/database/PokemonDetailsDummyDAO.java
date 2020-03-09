@@ -1,6 +1,6 @@
 package com.pokedex.microservice.pokedetailservice.dummy.database;
 
-import com.pokedex.microservice.pokedetailservice.model.PokemonDetails;
+import com.pokedex.microservice.pokedetailservice.models.PokemonDetails;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;

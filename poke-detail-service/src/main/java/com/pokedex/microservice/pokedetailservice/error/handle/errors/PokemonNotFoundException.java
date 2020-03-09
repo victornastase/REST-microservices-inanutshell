@@ -1,4 +1,4 @@
-package com.pokedex.microservice.pokedetailservice.model.exceptions;
+package com.pokedex.microservice.pokedetailservice.error.handle.errors;
 
 public class PokemonNotFoundException extends RuntimeException {
 

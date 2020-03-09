@@ -1,8 +1,8 @@
 package com.pokedex.microservice.pokedetailservice.resources;
 
 import com.pokedex.microservice.pokedetailservice.dummy.database.PokemonDetailsDummyDAO;
-import com.pokedex.microservice.pokedetailservice.model.PokemonDetails;
-import com.pokedex.microservice.pokedetailservice.model.exceptions.PokemonNotFoundException;
+import com.pokedex.microservice.pokedetailservice.models.PokemonDetails;
+import com.pokedex.microservice.pokedetailservice.error.handle.errors.PokemonNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

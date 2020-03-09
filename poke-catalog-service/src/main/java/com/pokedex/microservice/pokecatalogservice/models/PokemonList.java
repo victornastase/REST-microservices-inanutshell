@@ -1,4 +1,4 @@
-package com.pokedex.microservice.pokebrowseservice.model;
+package com.pokedex.microservice.pokecatalogservice.models;
 
 import java.util.List;
 

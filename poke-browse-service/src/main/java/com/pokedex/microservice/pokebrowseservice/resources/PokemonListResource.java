@@ -1,7 +1,7 @@
 package com.pokedex.microservice.pokebrowseservice.resources;
 
 import com.pokedex.microservice.pokebrowseservice.dummy.database.DummyPokemonListDAO;
-import com.pokedex.microservice.pokebrowseservice.model.PokemonList;
+import com.pokedex.microservice.pokebrowseservice.models.PokemonList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

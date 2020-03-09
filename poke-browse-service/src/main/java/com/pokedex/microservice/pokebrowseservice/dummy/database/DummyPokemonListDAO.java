@@ -1,7 +1,7 @@
 package com.pokedex.microservice.pokebrowseservice.dummy.database;
 
-import com.pokedex.microservice.pokebrowseservice.model.PokemonItem;
-import com.pokedex.microservice.pokebrowseservice.model.PokemonList;
+import com.pokedex.microservice.pokebrowseservice.models.PokemonItem;
+import com.pokedex.microservice.pokebrowseservice.models.PokemonList;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;

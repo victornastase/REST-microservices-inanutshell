@@ -1,6 +1,6 @@
 package com.pokedex.microservice.pokebrowseservice.error.handle;
 
-import com.pokedex.microservice.pokebrowseservice.model.exceptions.ExceptionResponse;
+import com.pokedex.microservice.pokebrowseservice.models.exceptions.ExceptionResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
