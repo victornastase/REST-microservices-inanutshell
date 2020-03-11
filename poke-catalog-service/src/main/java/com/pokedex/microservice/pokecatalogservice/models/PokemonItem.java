@@ -1,12 +1,23 @@
 package com.pokedex.microservice.pokecatalogservice.models;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import java.util.List;
 
+@ApiModel(description = "Model for a pokemon item abstraction.")
 public class PokemonItem {
 
+    @ApiModelProperty(value = "Pokemon name", required = true, example = "Pikachu, Charmander")
     private String name;
+
+    @ApiModelProperty(value = "Pokemon types")
     private List<String> types;
+
+    @ApiModelProperty(value = "Pokemon image URL")
     private String imgURL;
+
+    @ApiModelProperty(value = "Boolean value for favorite option.")
     private boolean favorite;
 
     public PokemonItem(String name, List<String> types, String imgURL, boolean favorite) {

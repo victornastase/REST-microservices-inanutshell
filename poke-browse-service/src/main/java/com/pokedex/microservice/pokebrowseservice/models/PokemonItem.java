@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 
 import java.util.List;
 
-@ApiModel(description = "Model for pokemon list details abstraction.")
+@ApiModel(description = "Model for a pokemon item abstraction.")
 public class PokemonItem {
 
     @ApiModelProperty(value = "Pokemon name", required = true, example = "Pikachu, Charmander")
