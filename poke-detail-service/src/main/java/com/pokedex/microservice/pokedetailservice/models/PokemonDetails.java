@@ -1,18 +1,41 @@
 package com.pokedex.microservice.pokedetailservice.models;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import java.util.List;
 
+@ApiModel(description = "Model for pokemon details abstraction.")
 public class PokemonDetails {
 
+    @ApiModelProperty(value = "Pokemon name", required = true, example = "Pikachu, Charmander")
     private String name;
+
+    @ApiModelProperty(value = "Pokemon types")
     private List<String> types;
+
+    @ApiModelProperty(value = "Pokemon image URL")
     private String imgURL;
+
+    @ApiModelProperty(value = "Boolean value for favorite option.")
     private boolean favorite;
+
+    @ApiModelProperty(value = "Pokemon Combat Points.")
     private int CP;
+
+    @ApiModelProperty(value = "Pokemon Health Points.")
     private int HP;
+
+    @ApiModelProperty(value = "Pokemon Minimum Height.")
     private String minHeight;
+
+    @ApiModelProperty(value = "Pokemon Maximum Height.")
     private String maxHeight;
+
+    @ApiModelProperty(value = "Pokemon Minimum Weight.")
     private String minWeight;
+
+    @ApiModelProperty(value = "Pokemon Maximum Weight.")
     private String maxWeight;
 
     public PokemonDetails(String name, List<String> types, String imgURL, boolean favorite, int CP, int HP,
