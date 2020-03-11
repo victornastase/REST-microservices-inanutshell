@@ -1,7 +1,8 @@
-package com.pokedex.microservice.pokedetailservice.swagger;
+package com.pokedex.microservice.pokebrowseservice.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import springfox.documentation.RequestHandler;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
@@ -15,20 +16,19 @@ import java.util.Collections;
 @EnableSwagger2
 public class SwaggerConfiguration {
 
-    private static final ApiInfo API_INFO = new ApiInfo("Pokedex Detail Service",
-                                                        "Provide pokemon details.",
-                                                        "0.0.1-SNAPSHOT", "Terms of service",
-                                                        new Contact("Victor Nastase",
+    private static final ApiInfo API_INFO = new ApiInfo("Pokedex Browse Service",
+                                                       "Provide pokemon list with breaf details about pokemon.",
+                                                       "0.0.1-SNAPSHOT", "Terms of service",
+                                                       new Contact("Victor Nastase",
                                                                     "No site",
-                                                                    "victor.nastase@ibm.com"),
+                                                       "victor.nastase@ibm.com"),
                                                         "", "", Collections.emptyList());
 
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2).select()
-                .apis(RequestHandlerSelectors.basePackage("com.pokedex.microservice.pokedetailservice.resources"))
+                .apis(RequestHandlerSelectors.basePackage("com.pokedex.microservice.pokebrowseservice.resources"))
                 .build()
                 .apiInfo(API_INFO);
     }
-
 }
